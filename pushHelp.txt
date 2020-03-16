@@ -1,0 +1,7 @@
+TYPE THE FOLLOWING TO PUSH:
+
+git add --all
+
+git commit -m "added custom fancy menu buttons and title"
+
+git push -u origin master
