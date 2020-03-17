@@ -2,6 +2,11 @@ TYPE THE FOLLOWING TO PUSH:
 
 git add --all
 
-git commit -m "added custom fancy menu buttons and title"
+git commit -m "modified menu buttons, changed title and description color, added background image, and made features page functional"
 
 git push -u origin master
+
+https://codepen.io/derekmorash/pen/XddZJY
+
+
+4tYyoWhEn2Wg9x7f6aNW

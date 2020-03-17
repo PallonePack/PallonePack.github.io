@@ -1,15 +1,21 @@
 html, body {
   width: 100%;
   height: 100%;
-  background-color: #184e33;
-  background: url("background.png") 80%;
+  background: #184e33;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
 }
 
+
+html { overflow-y: scroll; overflow-x:hidden; }
+body { 
+position: absolute;
+}
+
 /*
 body {
-
+  display: -webkit-box;
+  flex-wrap: wrap;
   justify-content: space-around;
   -webkit-box-align: center;
           align-items: center;
@@ -20,58 +26,51 @@ h1 {
   color: #ccffcc;
   font-size: 4rem;
   text-transform: uppercase;
+  display: block;
   width: 100%;
   text-align: center;
-  text-shadow: 10px 10px #008000;
 }
-
-
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 3rem;
+	position: relative;
   }
 }
 
+
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+img:hover {
+  filter: brightness(150%);
+  filter: contrast(150%);
+  width: 23%;
+}
 
 
 p {
   color: #ccffcc;
   font-size: 1.2rem;
   width: 100%;
-  padding: 20px;
-  text-align: center;
-  text-shadow: 2px 2px 5px #000000;
-}
-
-img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 10%;
-}
-
-img:hover {
-  filter: brightness(150%);
-  filter: contrast(150%);
-  width: 13%;
-}
-
-.buttons {
   text-align: center;
 }
 
 .btn {
-  display: -webkit-box;
-  flex-wrap: wrap;
-
-
   box-sizing: border-box;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-color: transparent;
-  border: 2px solid $red;
-  border-radius: 1em;
-  color: $red;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
   cursor: pointer;
+  display: -webkit-box;
   display: flex;
   align-self: center;
   font-size: 1rem;
@@ -83,7 +82,7 @@ img:hover {
   text-align: center;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700; 
+  font-weight: 700;
 }
 .btn:hover, .btn:focus {
   color: #fff;
@@ -116,7 +115,6 @@ img:hover {
 
 */
 .features {
-  display:inline-block;
   border-color: #3498db;
   color: #fff;
   box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
@@ -124,13 +122,10 @@ img:hover {
   transition: all 150ms ease-in-out;
 }
 .features:hover {
-  text-shadow: 2px 2px 5px #000000;
   box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
-  line-height: 3;
 }
 
 .installation {
-  display:inline-block;
   border-color: #00cc44;
   color: #fff;
   box-shadow: 0 0 40px 40px #00cc44 inset, 0 0 0 0 #00cc44;
@@ -138,13 +133,10 @@ img:hover {
   transition: all 150ms ease-in-out;
 }
 .installation:hover {
-  text-shadow: 2px 2px 5px #000000;
   box-shadow: 0 0 10px 0 #00cc44 inset, 0 0 10px 4px #00cc44;
-  line-height: 3;
 }
 
 .credits {
-  display:inline-block;
   border-color: #ff4d4d;
   color: #fff;
   box-shadow: 0 0 40px 40px #ff4d4d inset, 0 0 0 0 #ff4d4d;
@@ -152,7 +144,5 @@ img:hover {
   transition: all 150ms ease-in-out;
 }
 .credits:hover {
-  text-shadow: 2px 2px 5px #000000;
   box-shadow: 0 0 10px 0 #ff4d4d inset, 0 0 10px 4px #ff4d4d;
-  line-height: 3;
 }
