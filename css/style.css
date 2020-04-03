@@ -3,9 +3,6 @@ html, body {
   background-color: #184e33;
 
   background-image: url("background.png"); 
-      background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: center;
 ;
 
   /*font-family: 'Montserrat', sans-serif;*/
@@ -42,12 +39,21 @@ h1 {
 
 
 p {
-  color: #ccffcc;
+  color: white;
   font-size: 1.2rem;
   width: 100%;
   padding: 20px;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.description{
   text-align: center;
-  text-shadow: 2px 2px 5px #000000;
+}
+
+.madeby{
+	position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 img{
@@ -90,6 +96,7 @@ img:hover {
   text-align: center;
   text-transform: uppercase;
   font-family: Minecrafter;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   /*font-weight: 700; */
 }
 .btn:hover, .btn:focus {
